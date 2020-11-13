@@ -48,9 +48,9 @@ sorted_similar_users = sorted(similar_users,key=lambda x:x[1],reverse=True)
 
 ## Step 8: Print titles of first 50 movies
 i=0
-print("Top 5 similar profiles to "+Similar_profile+" are:\n")
+print("Top  similar profiles to "+Similar_profile+" are:\n")
 for element in sorted_similar_users:
 		print (get_title_from_index(element[0]))
 		i=i+1
-		if i>5:
+		if i>100:
 			break
